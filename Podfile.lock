@@ -1,0 +1,75 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireActivityLogger (2.5.0):
+    - Alamofire (~> 4.7)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - DifferenceKit (1.1.1):
+    - DifferenceKit/Core (= 1.1.1)
+    - DifferenceKit/UIKitExtension (= 1.1.1)
+  - DifferenceKit/Core (1.1.1)
+  - DifferenceKit/UIKitExtension (1.1.1):
+    - DifferenceKit/Core
+  - FontBlaster (4.1.0)
+  - ObjectMapper (3.4.2)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SwiftDate (6.0.1)
+  - SwiftGen (6.1.0)
+  - SwiftLint (0.31.0)
+  - SwiftyButton (0.8.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireActivityLogger
+  - AlamofireNetworkActivityIndicator
+  - AlamofireObjectMapper
+  - DifferenceKit
+  - FontBlaster
+  - ObjectMapper
+  - SDWebImage
+  - SwiftDate
+  - SwiftGen
+  - SwiftLint
+  - SwiftyButton
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireActivityLogger
+    - AlamofireNetworkActivityIndicator
+    - AlamofireObjectMapper
+    - DifferenceKit
+    - FontBlaster
+    - ObjectMapper
+    - SDWebImage
+    - SwiftDate
+    - SwiftGen
+    - SwiftLint
+    - SwiftyButton
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireActivityLogger: 4dbb52cbd9a26590775df5d4d0284fa81f9b9b5b
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  DifferenceKit: cf1b84e2207ea45c3640381cb229cf46c1647466
+  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SwiftDate: 2b3ef6b8fc30c22391033d1acad5622a51660016
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: b4a04df951feee62ac9f387aae49c6c40140012c
+
+COCOAPODS: 1.6.0
