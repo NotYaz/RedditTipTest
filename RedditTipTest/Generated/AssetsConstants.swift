@@ -19,9 +19,14 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Resources {
   internal enum Assets {
+    internal static let commentShape = ImageAsset(name: "CommentShape")
     internal static let fakeFeedBackground = ImageAsset(name: "FakeFeedBackground")
+    internal static let tipShape = ImageAsset(name: "TipShape")
+    internal static let voteDownShape = ImageAsset(name: "VoteDownShape")
+    internal static let voteUpShape = ImageAsset(name: "VoteUpShape")
   }
   internal enum Colors {
+    internal static let darkGray = ColorAsset(name: "darkGray")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

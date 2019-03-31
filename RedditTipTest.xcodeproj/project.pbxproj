@@ -35,6 +35,9 @@
 		2CE3F4B12251135D0077A490 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4AE2251135D0077A490 /* StoryboardSegues.swift */; };
 		2CE3F4B22251135D0077A490 /* AssetsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4AF2251135D0077A490 /* AssetsConstants.swift */; };
 		2CE3F4B4225114D70077A490 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4B3225114D70077A490 /* Fonts.swift */; };
+		2CE3F4B62251264E0077A490 /* BaseSlidingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4B52251264E0077A490 /* BaseSlidingVC.swift */; };
+		2CE3F4BA225127020077A490 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4B9225127020077A490 /* Globals.swift */; };
+		2CE3F4BC2251275B0077A490 /* SlidingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4BB2251275B0077A490 /* SlidingTransition.swift */; };
 		BAF6968A7402E86A66E242FA /* Pods_RedditTipTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFF7AA620635DE65B90B027 /* Pods_RedditTipTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,9 @@
 		2CE3F4AE2251135D0077A490 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
 		2CE3F4AF2251135D0077A490 /* AssetsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsConstants.swift; sourceTree = "<group>"; };
 		2CE3F4B3225114D70077A490 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		2CE3F4B52251264E0077A490 /* BaseSlidingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingVC.swift; sourceTree = "<group>"; };
+		2CE3F4B9225127020077A490 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		2CE3F4BB2251275B0077A490 /* SlidingTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTransition.swift; sourceTree = "<group>"; };
 		A166805954472C1F592949E4 /* Pods-RedditTipTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditTipTest.release.xcconfig"; path = "Target Support Files/Pods-RedditTipTest/Pods-RedditTipTest.release.xcconfig"; sourceTree = "<group>"; };
 		DFFF7AA620635DE65B90B027 /* Pods_RedditTipTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedditTipTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,7 +153,9 @@
 		2CE3F47922510B0E0077A490 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2CE3F4B8225126F50077A490 /* Helpers */,
 				2CE3F46522510A640077A490 /* AppDelegate.swift */,
+				2CE3F4B7225126680077A490 /* Transitions */,
 				2CE3F47A22510B1B0077A490 /* ViewControllers */,
 			);
 			path = Common;
@@ -157,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				2CE3F47B22510B2D0077A490 /* BaseVC.swift */,
+				2CE3F4B52251264E0077A490 /* BaseSlidingVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +227,22 @@
 				2CE3F4AE2251135D0077A490 /* StoryboardSegues.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		2CE3F4B7225126680077A490 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4BB2251275B0077A490 /* SlidingTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		2CE3F4B8225126F50077A490 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4B9225127020077A490 /* Globals.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		6A267004C2F1AD955AD56A08 /* Pods */ = {
@@ -390,6 +415,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -405,6 +431,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -424,12 +451,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE3F4B4225114D70077A490 /* Fonts.swift in Sources */,
+				2CE3F4BC2251275B0077A490 /* SlidingTransition.swift in Sources */,
 				2CE3F4A222510F8B0077A490 /* FeedVC.swift in Sources */,
 				2CE3F46622510A640077A490 /* AppDelegate.swift in Sources */,
 				2CE3F4B12251135D0077A490 /* StoryboardSegues.swift in Sources */,
+				2CE3F4B62251264E0077A490 /* BaseSlidingVC.swift in Sources */,
 				2CE3F47C22510B2D0077A490 /* BaseVC.swift in Sources */,
 				2CE3F4B22251135D0077A490 /* AssetsConstants.swift in Sources */,
 				2CE3F4B02251135D0077A490 /* StoryboardScenes.swift in Sources */,
+				2CE3F4BA225127020077A490 /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSans-Medium.ttf">
+            <string>IBMPlexSans-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--FeedVC-->
         <scene sceneID="Jja-X9-Uz9">
@@ -21,11 +27,107 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FakeFeedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ZXD-r8-hgc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeU-mL-W8l">
+                                <rect key="frame" x="0.0" y="681" width="375" height="47"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNE-mJ-4Hd">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="47"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bm4-eo-aUC">
+                                                <rect key="frame" x="49" y="15" width="27" height="17"/>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="13"/>
+                                                <color key="textColor" name="darkGray"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uil-cP-259">
+                                                <rect key="frame" x="84" y="12.666666666666629" width="18" height="22"/>
+                                                <state key="normal" image="VoteDownShape"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLX-g9-nbI">
+                                                <rect key="frame" x="23" y="12.666666666666629" width="18" height="22"/>
+                                                <state key="normal" image="VoteUpShape"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Uil-cP-259" firstAttribute="leading" secondItem="Bm4-eo-aUC" secondAttribute="trailing" constant="8" id="4Xj-U1-jXH"/>
+                                            <constraint firstItem="bLX-g9-nbI" firstAttribute="centerY" secondItem="BNE-mJ-4Hd" secondAttribute="centerY" id="BTM-5i-3uR"/>
+                                            <constraint firstItem="Bm4-eo-aUC" firstAttribute="centerX" secondItem="BNE-mJ-4Hd" secondAttribute="centerX" id="M4K-9m-ynj"/>
+                                            <constraint firstItem="Bm4-eo-aUC" firstAttribute="leading" secondItem="bLX-g9-nbI" secondAttribute="trailing" constant="8" id="gvL-zJ-akT"/>
+                                            <constraint firstItem="Bm4-eo-aUC" firstAttribute="centerY" secondItem="BNE-mJ-4Hd" secondAttribute="centerY" id="k4V-v8-N7u"/>
+                                            <constraint firstItem="Uil-cP-259" firstAttribute="centerY" secondItem="BNE-mJ-4Hd" secondAttribute="centerY" id="xZi-iw-xYT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-w6-F3v">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wa-zc-f84">
+                                                <rect key="frame" x="37.666666666666657" y="14.666666666666629" width="50" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="AIJ-au-yBa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="13"/>
+                                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="3" image="CommentShape">
+                                                    <color key="titleColor" name="darkGray"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="6wa-zc-f84" firstAttribute="centerX" secondItem="ebs-w6-F3v" secondAttribute="centerX" id="aBE-6S-4bx"/>
+                                            <constraint firstItem="6wa-zc-f84" firstAttribute="centerY" secondItem="ebs-w6-F3v" secondAttribute="centerY" id="cOQ-v0-ZRl"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-UZ-ox0">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNA-jk-u1a">
+                                                <rect key="frame" x="12.666666666666686" y="15" width="100" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="3bL-Kf-bOM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="13"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Tip" image="TipShape">
+                                                    <color key="titleColor" name="darkGray"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="rNA-jk-u1a" firstAttribute="centerY" secondItem="d5g-UZ-ox0" secondAttribute="centerY" id="4TS-Q6-7QO"/>
+                                            <constraint firstItem="rNA-jk-u1a" firstAttribute="centerX" secondItem="d5g-UZ-ox0" secondAttribute="centerX" id="itv-0m-iq5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BNE-mJ-4Hd" firstAttribute="width" secondItem="ebs-w6-F3v" secondAttribute="width" id="2WR-tz-3wZ"/>
+                                    <constraint firstItem="BNE-mJ-4Hd" firstAttribute="leading" secondItem="IeU-mL-W8l" secondAttribute="leading" id="B6w-NS-ZLq"/>
+                                    <constraint firstItem="ebs-w6-F3v" firstAttribute="leading" secondItem="BNE-mJ-4Hd" secondAttribute="trailing" id="CPj-LS-0su"/>
+                                    <constraint firstItem="d5g-UZ-ox0" firstAttribute="leading" secondItem="ebs-w6-F3v" secondAttribute="trailing" id="DtW-fc-XAx"/>
+                                    <constraint firstAttribute="bottom" secondItem="d5g-UZ-ox0" secondAttribute="bottom" id="Urf-b9-egx"/>
+                                    <constraint firstAttribute="height" constant="47" id="VPU-Cf-fFZ"/>
+                                    <constraint firstItem="BNE-mJ-4Hd" firstAttribute="top" secondItem="IeU-mL-W8l" secondAttribute="top" id="W7y-dO-nnq"/>
+                                    <constraint firstItem="BNE-mJ-4Hd" firstAttribute="width" secondItem="d5g-UZ-ox0" secondAttribute="width" id="Yal-pB-0ud"/>
+                                    <constraint firstItem="ebs-w6-F3v" firstAttribute="top" secondItem="IeU-mL-W8l" secondAttribute="top" id="iey-ZI-GLI"/>
+                                    <constraint firstAttribute="bottom" secondItem="ebs-w6-F3v" secondAttribute="bottom" id="jQp-Lw-rOs"/>
+                                    <constraint firstAttribute="bottom" secondItem="BNE-mJ-4Hd" secondAttribute="bottom" id="pTW-dH-8nB"/>
+                                    <constraint firstItem="d5g-UZ-ox0" firstAttribute="top" secondItem="IeU-mL-W8l" secondAttribute="top" id="sLB-aA-vrR"/>
+                                    <constraint firstAttribute="trailing" secondItem="d5g-UZ-ox0" secondAttribute="trailing" id="u8N-dU-Gvr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZXD-r8-hgc" firstAttribute="leading" secondItem="lje-tR-WEe" secondAttribute="leading" id="1YQ-ZH-OJo"/>
                             <constraint firstAttribute="trailing" secondItem="ZXD-r8-hgc" secondAttribute="trailing" id="Tqp-vf-wYY"/>
+                            <constraint firstItem="IeU-mL-W8l" firstAttribute="leading" secondItem="dx0-fC-ZSp" secondAttribute="leading" id="Zh7-ID-1BC"/>
+                            <constraint firstItem="dx0-fC-ZSp" firstAttribute="bottom" secondItem="IeU-mL-W8l" secondAttribute="bottom" constant="50" id="eGd-Ei-KhJ"/>
+                            <constraint firstItem="dx0-fC-ZSp" firstAttribute="trailing" secondItem="IeU-mL-W8l" secondAttribute="trailing" id="jVq-56-yK8"/>
                             <constraint firstItem="ZXD-r8-hgc" firstAttribute="top" secondItem="lje-tR-WEe" secondAttribute="top" id="psC-dB-euc"/>
                             <constraint firstAttribute="bottom" secondItem="ZXD-r8-hgc" secondAttribute="bottom" id="qbo-Ft-kCY"/>
                         </constraints>
@@ -34,10 +136,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g57-Ju-3jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5" y="-71"/>
+            <point key="canvasLocation" x="4" y="-71.674876847290648"/>
         </scene>
     </scenes>
     <resources>
+        <image name="CommentShape" width="18" height="18"/>
         <image name="FakeFeedBackground" width="375" height="812"/>
+        <image name="TipShape" width="17" height="17"/>
+        <image name="VoteDownShape" width="18" height="18"/>
+        <image name="VoteUpShape" width="18" height="18"/>
+        <namedColor name="darkGray">
+            <color red="0.52999997138977051" green="0.54000002145767212" blue="0.55000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
