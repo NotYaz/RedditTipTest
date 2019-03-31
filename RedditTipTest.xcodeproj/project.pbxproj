@@ -31,6 +31,10 @@
 		2CE3F4A522510FC60077A490 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F4A422510FC60077A490 /* swiftgen.yml */; };
 		2CE3F4A92251104A0077A490 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F4A82251104A0077A490 /* Feed.storyboard */; };
 		2CE3F4AB225111350077A490 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F4AA225111350077A490 /* Colors.xcassets */; };
+		2CE3F4B02251135D0077A490 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4AD2251135D0077A490 /* StoryboardScenes.swift */; };
+		2CE3F4B12251135D0077A490 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4AE2251135D0077A490 /* StoryboardSegues.swift */; };
+		2CE3F4B22251135D0077A490 /* AssetsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4AF2251135D0077A490 /* AssetsConstants.swift */; };
+		2CE3F4B4225114D70077A490 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4B3225114D70077A490 /* Fonts.swift */; };
 		BAF6968A7402E86A66E242FA /* Pods_RedditTipTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFF7AA620635DE65B90B027 /* Pods_RedditTipTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,10 @@
 		2CE3F4A422510FC60077A490 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		2CE3F4A82251104A0077A490 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		2CE3F4AA225111350077A490 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		2CE3F4AD2251135D0077A490 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		2CE3F4AE2251135D0077A490 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		2CE3F4AF2251135D0077A490 /* AssetsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsConstants.swift; sourceTree = "<group>"; };
+		2CE3F4B3225114D70077A490 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A166805954472C1F592949E4 /* Pods-RedditTipTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditTipTest.release.xcconfig"; path = "Target Support Files/Pods-RedditTipTest/Pods-RedditTipTest.release.xcconfig"; sourceTree = "<group>"; };
 		DFFF7AA620635DE65B90B027 /* Pods_RedditTipTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedditTipTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -204,6 +212,10 @@
 		2CE3F4AC225111850077A490 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				2CE3F4B3225114D70077A490 /* Fonts.swift */,
+				2CE3F4AF2251135D0077A490 /* AssetsConstants.swift */,
+				2CE3F4AD2251135D0077A490 /* StoryboardScenes.swift */,
+				2CE3F4AE2251135D0077A490 /* StoryboardSegues.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -378,7 +390,6 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -394,7 +405,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -413,9 +423,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE3F4B4225114D70077A490 /* Fonts.swift in Sources */,
 				2CE3F4A222510F8B0077A490 /* FeedVC.swift in Sources */,
 				2CE3F46622510A640077A490 /* AppDelegate.swift in Sources */,
+				2CE3F4B12251135D0077A490 /* StoryboardSegues.swift in Sources */,
 				2CE3F47C22510B2D0077A490 /* BaseVC.swift in Sources */,
+				2CE3F4B22251135D0077A490 /* AssetsConstants.swift in Sources */,
+				2CE3F4B02251135D0077A490 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

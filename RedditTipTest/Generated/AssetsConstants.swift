@@ -19,6 +19,7 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Resources {
   internal enum Assets {
+    internal static let fakeFeedBackground = ImageAsset(name: "FakeFeedBackground")
   }
   internal enum Colors {
   }

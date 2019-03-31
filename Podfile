@@ -14,7 +14,6 @@ def developmentPods
     pod 'SDWebImage'
     
     # Helpers
-    pod 'FontBlaster'
     pod 'SwiftGen'
     pod 'SwiftLint'
     pod 'SwiftDate'

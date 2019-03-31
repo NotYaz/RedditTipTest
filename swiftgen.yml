@@ -15,3 +15,8 @@ xcassets:
     output: AssetsConstants.swift
     params:
       enumName: Resources
+fonts:
+  inputs: "../Resources/Fonts"
+  outputs:
+    templateName: swift4
+    output: Fonts.swift

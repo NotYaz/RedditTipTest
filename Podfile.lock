@@ -13,7 +13,6 @@ PODS:
   - DifferenceKit/Core (1.1.1)
   - DifferenceKit/UIKitExtension (1.1.1):
     - DifferenceKit/Core
-  - FontBlaster (4.1.0)
   - ObjectMapper (3.4.2)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
@@ -30,7 +29,6 @@ DEPENDENCIES:
   - AlamofireNetworkActivityIndicator
   - AlamofireObjectMapper
   - DifferenceKit
-  - FontBlaster
   - ObjectMapper
   - SDWebImage
   - SwiftDate
@@ -46,7 +44,6 @@ SPEC REPOS:
     - AlamofireNetworkActivityIndicator
     - AlamofireObjectMapper
     - DifferenceKit
-    - FontBlaster
     - ObjectMapper
     - SDWebImage
     - SwiftDate
@@ -61,7 +58,6 @@ SPEC CHECKSUMS:
   AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   DifferenceKit: cf1b84e2207ea45c3640381cb229cf46c1647466
-  FontBlaster: 127aa66419478d1c62926c7fdb39841633344a45
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SwiftDate: 2b3ef6b8fc30c22391033d1acad5622a51660016
@@ -70,6 +66,6 @@ SPEC CHECKSUMS:
   SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: b4a04df951feee62ac9f387aae49c6c40140012c
+PODFILE CHECKSUM: 4ccf2d7712805b7f3b13896c8f93c10a788f11c8
 
 COCOAPODS: 1.6.0

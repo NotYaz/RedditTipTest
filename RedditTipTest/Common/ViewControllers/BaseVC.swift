@@ -10,4 +10,8 @@ import UIKit
 
 class BaseVC: UIViewController {
 
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
 }
