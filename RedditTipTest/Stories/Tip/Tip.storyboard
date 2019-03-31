@@ -215,7 +215,7 @@
                                             <constraint firstItem="gQO-kK-6J6" firstAttribute="top" secondItem="OoO-l7-rr3" secondAttribute="top" id="vBU-YR-eKt"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys8-lg-Qp5">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys8-lg-Qp5" userLabel="PaymentsView">
                                         <rect key="frame" x="0.0" y="238" width="398" height="48"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWv-IX-pIA">
@@ -239,7 +239,7 @@
                                             <constraint firstItem="XWv-IX-pIA" firstAttribute="leading" secondItem="ys8-lg-Qp5" secondAttribute="leading" constant="16" id="p7y-Br-N9D"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-UN-sob">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-UN-sob" userLabel="GoGoGoView">
                                         <rect key="frame" x="0.0" y="286" width="398" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E4-7c-zXH">

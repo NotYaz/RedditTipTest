@@ -30,7 +30,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IeU-mL-W8l">
                                 <rect key="frame" x="0.0" y="681" width="375" height="47"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNE-mJ-4Hd">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNE-mJ-4Hd" userLabel="FirstButtonView">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bm4-eo-aUC">
@@ -58,7 +58,7 @@
                                             <constraint firstItem="Uil-cP-259" firstAttribute="centerY" secondItem="BNE-mJ-4Hd" secondAttribute="centerY" id="xZi-iw-xYT"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-w6-F3v">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebs-w6-F3v" userLabel="SecondButtonView">
                                         <rect key="frame" x="125" y="0.0" width="125" height="47"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wa-zc-f84">
@@ -80,7 +80,7 @@
                                             <constraint firstItem="6wa-zc-f84" firstAttribute="centerY" secondItem="ebs-w6-F3v" secondAttribute="centerY" id="cOQ-v0-ZRl"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-UZ-ox0">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5g-UZ-ox0" userLabel="ThirdButtonView">
                                         <rect key="frame" x="250" y="0.0" width="125" height="47"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNA-jk-u1a">
