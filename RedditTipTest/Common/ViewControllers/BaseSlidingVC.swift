@@ -15,11 +15,18 @@ class BaseSlidingVC: BaseVC {
     @IBOutlet weak var contentContainerBottomSpacing: NSLayoutConstraint!
     @IBOutlet var panGR: UIPanGestureRecognizer!
 
+    var initialBottomSpacing: CGFloat = 0.0
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
         modalPresentationStyle = .custom
         transitioningDelegate = self
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        initialBottomSpacing = contentContainerBottomSpacing.constant
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -33,43 +40,28 @@ class BaseSlidingVC: BaseVC {
 extension BaseSlidingVC {
 
     @IBAction func handlePanGesture(_ sender: UIPanGestureRecognizer) {
-//        switch sender.state {
-//        case .began, .changed:
-//            if sender.state == .began {
-//
-//            } else {
-//
-//            }
-//            let translation = sender.translation(in: view)
-//            let newOffset = contentContainerTopSpacing.constant + translation.y
-//            if topConstraintRange.contains(newOffset) {
-//                contentContainerTopSpacing.constant = newOffset
-//            }
-//            sender.setTranslation(.zero, in: view)
-//        case .ended:
-//            let firstDistance = abs(topConstraintRange.upperBound - contentContainerTopSpacing.constant)
-//            let secondDistance = abs(topConstraintRange.lowerBound - contentContainerTopSpacing.constant)
-//
-//            let velocity = sender.velocity(in: view).y
-//            if abs(velocity) > 1000.0 {
-//                if velocity < 0 { // UP
-//                    contentContainerTopSpacing.constant = topConstraintRange.lowerBound
-//                } else { // Down
-//                    contentContainerTopSpacing.constant = topConstraintRange.upperBound
-//                }
-//            } else {
-//                if secondDistance < firstDistance {
-//                    contentContainerTopSpacing.constant = topConstraintRange.lowerBound
-//                } else {
-//                    contentContainerTopSpacing.constant = topConstraintRange.upperBound
-//                }
-//            }
-//            UIView.animate(withDuration: 0.1, delay: 0.0, options: [.beginFromCurrentState, .allowUserInteraction, .curveEaseOut], animations: {
-//                self.view.layoutIfNeeded()
-//            })
-//        default:
-//            break
-//        }
+        switch sender.state {
+        case .began, .changed:
+            let translation = sender.translation(in: view)
+            let newOffset = contentContainerBottomSpacing.constant - translation.y
+            if newOffset <= initialBottomSpacing {
+                contentContainerBottomSpacing.constant = newOffset
+            }
+            sender.setTranslation(.zero, in: view)
+        case .ended:
+            if contentContainerBottomSpacing.constant > 0.0 {
+                contentContainerBottomSpacing.constant = initialBottomSpacing
+                UIView.animate(withDuration: 0.1,
+                               delay: 0.0,
+                               options: [.beginFromCurrentState, .allowUserInteraction, .curveEaseOut], animations: {
+                    self.view.layoutIfNeeded()
+                })
+            } else {
+                dismiss()
+            }
+        default:
+            break
+        }
     }
 
 }

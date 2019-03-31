@@ -20,7 +20,7 @@ final class TipSlidingVC: BaseSlidingVC {
 
     let baseHeight: CGFloat = 298.0
     let animationDuration = 0.3
-    let amountRange = (1..<100)
+    let amountRange = (1...100)
 
     var isExpanded = false {
         didSet {

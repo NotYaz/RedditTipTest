@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4004862251849F00A7022F /* LongPressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4004852251849F00A7022F /* LongPressButton.swift */; };
 		2CE3F46622510A640077A490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F46522510A640077A490 /* AppDelegate.swift */; };
 		2CE3F46D22510A670077A490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F46C22510A670077A490 /* Assets.xcassets */; };
 		2CE3F47022510A670077A490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F46E22510A670077A490 /* LaunchScreen.storyboard */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		0CEF1D4FE4D8FD1FB950E0EC /* Pods-RedditTipTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditTipTest.debug.xcconfig"; path = "Target Support Files/Pods-RedditTipTest/Pods-RedditTipTest.debug.xcconfig"; sourceTree = "<group>"; };
+		2C4004852251849F00A7022F /* LongPressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButton.swift; sourceTree = "<group>"; };
 		2CE3F46222510A640077A490 /* RedditTipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditTipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE3F46522510A640077A490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE3F46C22510A670077A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2C4004842251848700A7022F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C4004852251849F00A7022F /* LongPressButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2CE3F45922510A640077A490 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +183,7 @@
 		2CE3F47922510B0E0077A490 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2C4004842251848700A7022F /* Views */,
 				2CE3F4CF22514DEA0077A490 /* Protocols */,
 				2CE3F4C32251310F0077A490 /* Extensions */,
 				2CE3F4B8225126F50077A490 /* Helpers */,
@@ -528,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE3F4B4225114D70077A490 /* Fonts.swift in Sources */,
+				2C4004862251849F00A7022F /* LongPressButton.swift in Sources */,
 				2CE3F4BC2251275B0077A490 /* SlidingTransition.swift in Sources */,
 				2CE3F4D6225168870077A490 /* Card.swift in Sources */,
 				2CE3F4A222510F8B0077A490 /* FeedVC.swift in Sources */,

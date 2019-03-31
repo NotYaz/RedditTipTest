@@ -112,7 +112,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sp-Nk-Guk" userLabel="ButtonsView">
                                                 <rect key="frame" x="0.0" y="138" width="398" height="100"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-n2-hVb">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-n2-hVb" customClass="LongPressButton" customModule="RedditTipTest" customModuleProvider="target">
                                                         <rect key="frame" x="16" y="0.0" width="78" height="64"/>
                                                         <color key="backgroundColor" name="lightGray"/>
                                                         <constraints>
@@ -148,7 +148,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jr9-x6-zaW">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jr9-x6-zaW" customClass="LongPressButton" customModule="RedditTipTest" customModuleProvider="target">
                                                         <rect key="frame" x="304" y="0.0" width="78" height="64"/>
                                                         <color key="backgroundColor" name="lightGray"/>
                                                         <constraints>
