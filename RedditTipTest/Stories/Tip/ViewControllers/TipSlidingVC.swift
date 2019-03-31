@@ -20,6 +20,7 @@ final class TipSlidingVC: BaseSlidingVC {
 
     let baseHeight: CGFloat = 298.0
     let animationDuration = 0.3
+    // MARK: Move it away :P
     let amountRange = (1...100)
 
     var isExpanded = false {
@@ -40,12 +41,6 @@ final class TipSlidingVC: BaseSlidingVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-
-        tosLabel.linkAttributes = [NSAttributedString.Key.foregroundColor: Resources.Colors.deepBlue.color,
-                                   NSAttributedString.Key.underlineStyle: 0]
-        if let tosText = tosLabel.text as? String, let range = tosText.range(of: "Beta Terms of Service") {
-            tosLabel.addLink(to: URL(string: "/zero"), with: NSRange(range, in: tosText))
-        }
     }
 
 }
@@ -54,6 +49,13 @@ extension TipSlidingVC {
 
     private func setupUI() {
         currentAmount = 1
+        
+        tosLabel.linkAttributes = [NSAttributedString.Key.foregroundColor: Resources.Colors.deepBlue.color,
+                                   NSAttributedString.Key.underlineStyle: 0]
+        if let tosText = tosLabel.text as? String, let range = tosText.range(of: "Beta Terms of Service") {
+            // MARK: setup delegate to handle link tap
+            tosLabel.addLink(to: URL(string: "/zero"), with: NSRange(range, in: tosText))
+        }
     }
 
 }

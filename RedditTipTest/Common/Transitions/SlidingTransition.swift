@@ -61,16 +61,6 @@ extension SlidingTransition: UIViewControllerAnimatedTransitioning {
             }, completion: { _ in
                 transitionContext.completeTransition(true)
             })
-//            UIView.animate(withDuration: transitionDuration(using: transitionContext),
-//                           delay: 0.0,
-//                           usingSpringWithDamping: 0.8,
-//                           initialSpringVelocity: 0.0,
-//                           options: .curveLinear,
-//                           animations: {
-//                popupVC.contentContainer.transform = CGAffineTransform(translationX: 0.0, y: popupVC.contentContainer.frame.size.height)
-//            }, completion: { _ in
-//                transitionContext.completeTransition(true)
-//            })
         }
     }
 
