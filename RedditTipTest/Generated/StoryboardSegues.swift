@@ -12,6 +12,12 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardSegue {
+  internal enum Feed: String, SegueType {
+    case tipSlidingVC = "TipSlidingVC"
+  }
+  internal enum Tip: String, SegueType {
+    case tipPaymentsTVC = "TipPaymentsTVC"
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

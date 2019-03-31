@@ -94,6 +94,9 @@
                                                 <state key="normal" title="Tip" image="TipShape">
                                                     <color key="titleColor" name="darkGray"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="tipButtonClicked:" destination="ObP-CO-8ga" eventType="touchUpInside" id="TR0-O9-zeT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -133,10 +136,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dx0-fC-ZSp"/>
                     </view>
+                    <connections>
+                        <segue destination="Rc0-3I-4tg" kind="presentation" identifier="TipSlidingVC" id="PlP-db-dRM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g57-Ju-3jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4" y="-71.674876847290648"/>
+        </scene>
+        <!--TipSlidingVC-->
+        <scene sceneID="e0m-Kt-Zdz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tip" referencedIdentifier="TipSlidingVC" id="Rc0-3I-4tg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gm-JX-dqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="70"/>
         </scene>
     </scenes>
     <resources>

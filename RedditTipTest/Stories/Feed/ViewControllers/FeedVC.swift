@@ -11,3 +11,11 @@ import UIKit
 final class FeedVC: BaseVC {
 
 }
+
+extension FeedVC {
+
+    @IBAction func tipButtonClicked(_ sender: Any) {
+        perform(segue: StoryboardSegue.Feed.tipSlidingVC)
+    }
+
+}

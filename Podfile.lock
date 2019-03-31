@@ -20,8 +20,8 @@ PODS:
   - SwiftDate (6.0.1)
   - SwiftGen (6.1.0)
   - SwiftLint (0.31.0)
-  - SwiftyButton (0.8.2)
   - SwiftyJSON (4.2.0)
+  - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -34,8 +34,8 @@ DEPENDENCIES:
   - SwiftDate
   - SwiftGen
   - SwiftLint
-  - SwiftyButton
   - SwiftyJSON
+  - TTTAttributedLabel
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -49,8 +49,8 @@ SPEC REPOS:
     - SwiftDate
     - SwiftGen
     - SwiftLint
-    - SwiftyButton
     - SwiftyJSON
+    - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -63,9 +63,9 @@ SPEC CHECKSUMS:
   SwiftDate: 2b3ef6b8fc30c22391033d1acad5622a51660016
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
-  SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 4ccf2d7712805b7f3b13896c8f93c10a788f11c8
+PODFILE CHECKSUM: 96ec5655175957de8ec8dbd586d943ba60b8193f
 
 COCOAPODS: 1.6.0

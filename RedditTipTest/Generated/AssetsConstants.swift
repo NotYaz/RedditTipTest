@@ -24,9 +24,19 @@ internal enum Resources {
     internal static let tipShape = ImageAsset(name: "TipShape")
     internal static let voteDownShape = ImageAsset(name: "VoteDownShape")
     internal static let voteUpShape = ImageAsset(name: "VoteUpShape")
+    internal static let addShape = ImageAsset(name: "AddShape")
+    internal static let blackLockShape = ImageAsset(name: "BlackLockShape")
+    internal static let checkShape = ImageAsset(name: "CheckShape")
+    internal static let closeShape = ImageAsset(name: "CloseShape")
+    internal static let grayLockShape = ImageAsset(name: "GrayLockShape")
+    internal static let snoovatar = ImageAsset(name: "Snoovatar")
   }
   internal enum Colors {
     internal static let darkGray = ColorAsset(name: "darkGray")
+    internal static let deepBlack = ColorAsset(name: "deepBlack")
+    internal static let deepBlue = ColorAsset(name: "deepBlue")
+    internal static let freshGreen = ColorAsset(name: "freshGreen")
+    internal static let lightGray = ColorAsset(name: "lightGray")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

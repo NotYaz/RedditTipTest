@@ -17,9 +17,9 @@ class BaseVC: UIViewController {
 }
 
 extension BaseVC {
-    
+
     func dismiss(completion: Block? = nil) {
         presentingViewController?.dismiss(animated: true, completion: completion)
     }
-    
+
 }

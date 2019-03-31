@@ -9,33 +9,33 @@
 import UIKit
 
 final class SlidingTransition: NSObject {
-    
+
     private let isPresenting: Bool
-    
+
     init(isPresenting: Bool) {
         self.isPresenting = isPresenting
     }
-    
+
 }
 
 extension SlidingTransition: UIViewControllerAnimatedTransitioning {
-    
+
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return isPresenting ? 0.7 : 0.7
+        return isPresenting ? 0.7 : 0.3
     }
-    
+
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let toVC = transitionContext.viewController(forKey: .to)!
         let fromVC = transitionContext.viewController(forKey: .from)!
-        
+
         if isPresenting {
             let popupVC = toVC as! BaseSlidingVC
             popupVC.dimView.alpha = 0.0
             popupVC.contentContainer.alpha = 0.0
             popupVC.contentContainer.transform = CGAffineTransform(translationX: 0.0, y: UIScreen.main.bounds.size.height)
-            
+
             transitionContext.containerView.addSubview(toVC.view)
-            
+
             UIView.animate(withDuration: transitionDuration(using: transitionContext) / 2, animations: {
                 popupVC.dimView.alpha = 0.8
             }, completion: { _ in
@@ -53,23 +53,25 @@ extension SlidingTransition: UIViewControllerAnimatedTransitioning {
             })
         } else {
             let popupVC = fromVC as! BaseSlidingVC
-            
+
             UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, options: .curveLinear, animations: {
                 popupVC.dimView.alpha = 0.0
                 popupVC.contentContainer.alpha = 0.0
-            })
-            UIView.animate(withDuration: transitionDuration(using: transitionContext),
-                           delay: 0.0,
-                           usingSpringWithDamping: 0.5,
-                           initialSpringVelocity: 0.0,
-                           options: .curveLinear,
-                           animations: {
                 popupVC.contentContainer.transform = CGAffineTransform(translationX: 0.0, y: popupVC.contentContainer.frame.size.height)
             }, completion: { _ in
                 transitionContext.completeTransition(true)
             })
+//            UIView.animate(withDuration: transitionDuration(using: transitionContext),
+//                           delay: 0.0,
+//                           usingSpringWithDamping: 0.8,
+//                           initialSpringVelocity: 0.0,
+//                           options: .curveLinear,
+//                           animations: {
+//                popupVC.contentContainer.transform = CGAffineTransform(translationX: 0.0, y: popupVC.contentContainer.frame.size.height)
+//            }, completion: { _ in
+//                transitionContext.completeTransition(true)
+//            })
         }
     }
-    
-}
 
+}

@@ -20,7 +20,7 @@ def developmentPods
     pod 'DifferenceKit'
     
     # UI
-    pod 'SwiftyButton'
+    pod 'TTTAttributedLabel'
     
 end
 

@@ -38,6 +38,16 @@
 		2CE3F4B62251264E0077A490 /* BaseSlidingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4B52251264E0077A490 /* BaseSlidingVC.swift */; };
 		2CE3F4BA225127020077A490 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4B9225127020077A490 /* Globals.swift */; };
 		2CE3F4BC2251275B0077A490 /* SlidingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4BB2251275B0077A490 /* SlidingTransition.swift */; };
+		2CE3F4C022512DE40077A490 /* Tip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F4BF22512DE40077A490 /* Tip.storyboard */; };
+		2CE3F4C222512E000077A490 /* TipSlidingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4C122512E000077A490 /* TipSlidingVC.swift */; };
+		2CE3F4C52251312E0077A490 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4C42251312E0077A490 /* UIView.swift */; };
+		2CE3F4C7225147E30077A490 /* BaseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4C6225147E30077A490 /* BaseTVC.swift */; };
+		2CE3F4C92251481B0077A490 /* TipPaymentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4C82251481B0077A490 /* TipPaymentsTVC.swift */; };
+		2CE3F4CC2251483B0077A490 /* PaymentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4CB2251483B0077A490 /* PaymentItem.swift */; };
+		2CE3F4CE22514DE50077A490 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4CD22514DE50077A490 /* UITableView.swift */; };
+		2CE3F4D122514DF80077A490 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4D022514DF80077A490 /* CellReusable.swift */; };
+		2CE3F4D422514E500077A490 /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4D322514E500077A490 /* PaymentCell.swift */; };
+		2CE3F4D6225168870077A490 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F4D5225168870077A490 /* Card.swift */; };
 		BAF6968A7402E86A66E242FA /* Pods_RedditTipTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFF7AA620635DE65B90B027 /* Pods_RedditTipTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +86,16 @@
 		2CE3F4B52251264E0077A490 /* BaseSlidingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingVC.swift; sourceTree = "<group>"; };
 		2CE3F4B9225127020077A490 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		2CE3F4BB2251275B0077A490 /* SlidingTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingTransition.swift; sourceTree = "<group>"; };
+		2CE3F4BF22512DE40077A490 /* Tip.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tip.storyboard; sourceTree = "<group>"; };
+		2CE3F4C122512E000077A490 /* TipSlidingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSlidingVC.swift; sourceTree = "<group>"; };
+		2CE3F4C42251312E0077A490 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		2CE3F4C6225147E30077A490 /* BaseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTVC.swift; sourceTree = "<group>"; };
+		2CE3F4C82251481B0077A490 /* TipPaymentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPaymentsTVC.swift; sourceTree = "<group>"; };
+		2CE3F4CB2251483B0077A490 /* PaymentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentItem.swift; sourceTree = "<group>"; };
+		2CE3F4CD22514DE50077A490 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		2CE3F4D022514DF80077A490 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
+		2CE3F4D322514E500077A490 /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		2CE3F4D5225168870077A490 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A166805954472C1F592949E4 /* Pods-RedditTipTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditTipTest.release.xcconfig"; path = "Target Support Files/Pods-RedditTipTest/Pods-RedditTipTest.release.xcconfig"; sourceTree = "<group>"; };
 		DFFF7AA620635DE65B90B027 /* Pods_RedditTipTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedditTipTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -153,6 +173,8 @@
 		2CE3F47922510B0E0077A490 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2CE3F4CF22514DEA0077A490 /* Protocols */,
+				2CE3F4C32251310F0077A490 /* Extensions */,
 				2CE3F4B8225126F50077A490 /* Helpers */,
 				2CE3F46522510A640077A490 /* AppDelegate.swift */,
 				2CE3F4B7225126680077A490 /* Transitions */,
@@ -166,6 +188,7 @@
 			children = (
 				2CE3F47B22510B2D0077A490 /* BaseVC.swift */,
 				2CE3F4B52251264E0077A490 /* BaseSlidingVC.swift */,
+				2CE3F4C6225147E30077A490 /* BaseTVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -173,6 +196,7 @@
 		2CE3F47D22510BFF0077A490 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				2CE3F4BD22512DD30077A490 /* Tip */,
 				2CE3F49F22510F5E0077A490 /* Feed */,
 			);
 			path = Stories;
@@ -243,6 +267,60 @@
 				2CE3F4B9225127020077A490 /* Globals.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2CE3F4BD22512DD30077A490 /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4D222514E3D0077A490 /* Cells */,
+				2CE3F4CA2251482B0077A490 /* Models */,
+				2CE3F4BE22512DD80077A490 /* ViewControllers */,
+				2CE3F4BF22512DE40077A490 /* Tip.storyboard */,
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		2CE3F4BE22512DD80077A490 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4C122512E000077A490 /* TipSlidingVC.swift */,
+				2CE3F4C82251481B0077A490 /* TipPaymentsTVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2CE3F4C32251310F0077A490 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4C42251312E0077A490 /* UIView.swift */,
+				2CE3F4CD22514DE50077A490 /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CE3F4CA2251482B0077A490 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4CB2251483B0077A490 /* PaymentItem.swift */,
+				2CE3F4D5225168870077A490 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CE3F4CF22514DEA0077A490 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4D022514DF80077A490 /* CellReusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2CE3F4D222514E3D0077A490 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2CE3F4D322514E500077A490 /* PaymentCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		6A267004C2F1AD955AD56A08 /* Pods */ = {
@@ -320,6 +398,7 @@
 				2CE3F49822510F140077A490 /* IBMPlexSans-Light.ttf in Resources */,
 				2CE3F49722510F140077A490 /* IBMPlexSans-SemiBold.ttf in Resources */,
 				2CE3F49922510F140077A490 /* IBMPlexSans-ExtraLightItalic.ttf in Resources */,
+				2CE3F4C022512DE40077A490 /* Tip.storyboard in Resources */,
 				2CE3F47022510A670077A490 /* LaunchScreen.storyboard in Resources */,
 				2CE3F48F22510F140077A490 /* IBMPlexSans-Thin.ttf in Resources */,
 				2CE3F4AB225111350077A490 /* Colors.xcassets in Resources */,
@@ -415,12 +494,11 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FontBlaster/FontBlaster.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyButton/SwiftyButton.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -431,12 +509,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontBlaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,14 +529,23 @@
 			files = (
 				2CE3F4B4225114D70077A490 /* Fonts.swift in Sources */,
 				2CE3F4BC2251275B0077A490 /* SlidingTransition.swift in Sources */,
+				2CE3F4D6225168870077A490 /* Card.swift in Sources */,
 				2CE3F4A222510F8B0077A490 /* FeedVC.swift in Sources */,
 				2CE3F46622510A640077A490 /* AppDelegate.swift in Sources */,
+				2CE3F4C52251312E0077A490 /* UIView.swift in Sources */,
 				2CE3F4B12251135D0077A490 /* StoryboardSegues.swift in Sources */,
+				2CE3F4D422514E500077A490 /* PaymentCell.swift in Sources */,
+				2CE3F4C222512E000077A490 /* TipSlidingVC.swift in Sources */,
 				2CE3F4B62251264E0077A490 /* BaseSlidingVC.swift in Sources */,
 				2CE3F47C22510B2D0077A490 /* BaseVC.swift in Sources */,
+				2CE3F4CC2251483B0077A490 /* PaymentItem.swift in Sources */,
 				2CE3F4B22251135D0077A490 /* AssetsConstants.swift in Sources */,
+				2CE3F4C92251481B0077A490 /* TipPaymentsTVC.swift in Sources */,
+				2CE3F4D122514DF80077A490 /* CellReusable.swift in Sources */,
 				2CE3F4B02251135D0077A490 /* StoryboardScenes.swift in Sources */,
+				2CE3F4CE22514DE50077A490 /* UITableView.swift in Sources */,
 				2CE3F4BA225127020077A490 /* Globals.swift in Sources */,
+				2CE3F4C7225147E30077A490 /* BaseTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

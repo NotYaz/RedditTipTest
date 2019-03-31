@@ -19,6 +19,13 @@ internal enum StoryboardScene {
 
     internal static let feedVC = SceneType<RedditTipTest.FeedVC>(storyboard: Feed.self, identifier: "FeedVC")
   }
+  internal enum Tip: StoryboardType {
+    internal static let storyboardName = "Tip"
+
+    internal static let tipPaymentsTVC = SceneType<RedditTipTest.TipPaymentsTVC>(storyboard: Tip.self, identifier: "TipPaymentsTVC")
+
+    internal static let tipSlidingVC = SceneType<RedditTipTest.TipSlidingVC>(storyboard: Tip.self, identifier: "TipSlidingVC")
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

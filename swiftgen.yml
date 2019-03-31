@@ -1,7 +1,8 @@
 input_dir: "RedditTipTest/"
 output_dir: "RedditTipTest/Generated/"
 ib:
-  inputs: ["Stories/Feed"]
+  inputs: ["Stories/Feed",
+           "Stories/Tip"]
   outputs:
     - templateName: scenes-swift4
       output: StoryboardScenes.swift
