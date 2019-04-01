@@ -28,7 +28,7 @@ final class TipPaymentsTVC: BaseTVC {
         }
     }
 
-    var selectedCard: Card?
+    private var selectedCard: Card?
     private var isExpanded = false
     static let itemHeight: CGFloat = 48.0
     var height: CGFloat {
@@ -38,7 +38,7 @@ final class TipPaymentsTVC: BaseTVC {
     weak var delegate: PaymentsDelegate?
 
     // MARK: fake logic
-    let allCards = [Card(lastFourDigits: "0741", category: .visa),
+    private let allCards = [Card(lastFourDigits: "0741", category: .visa),
                     Card(lastFourDigits: "3088", category: .mastercard),
                     Card(lastFourDigits: "2314", category: .amex)]
 

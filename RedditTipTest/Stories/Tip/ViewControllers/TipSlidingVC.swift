@@ -11,6 +11,8 @@ import TTTAttributedLabel
 
 final class TipSlidingVC: BaseSlidingVC {
 
+    typealias TipSuccessBlock = (Int) -> Void
+
     @IBOutlet weak var amountButton: UIButton!
     @IBOutlet weak var tipButton: UIButton!
     @IBOutlet weak var avatarIM: UIImageView!
@@ -19,12 +21,12 @@ final class TipSlidingVC: BaseSlidingVC {
     @IBOutlet weak var tosLabel: TTTAttributedLabel!
     @IBOutlet weak var loadingContainer: UIView!
 
-    let baseHeight: CGFloat = 298.0
-    let animationDuration = 0.3
+    private let baseHeight: CGFloat = 298.0
+    private let animationDuration = 0.3
     // MARK: Move it away :P
-    let amountRange = (1...100)
+    private let amountRange = (1...100)
 
-    var isExpanded = false {
+    private var isExpanded = false {
         didSet {
             paymentsHeight.constant = isExpanded ?  paymentsTVC.height : TipPaymentsTVC.itemHeight
             UIView.animate(withDuration: animationDuration) {
@@ -32,13 +34,15 @@ final class TipSlidingVC: BaseSlidingVC {
             }
         }
     }
-    var currentAmount = 1 {
+    private var currentAmount = 1 {
         didSet {
             amountButton.setTitle("$\(currentAmount)", for: .normal)
         }
     }
-    weak var paymentsTVC: TipPaymentsTVC!
-    weak var loadingVC: TipLoadingVC!
+    private weak var paymentsTVC: TipPaymentsTVC!
+    private weak var loadingVC: TipLoadingVC!
+
+    var successBlock: TipSuccessBlock?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,7 +90,12 @@ extension TipSlidingVC {
         loadingVC.startAnimation(with: currentAmount)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.3) { [weak self] in
-            self?.dismiss()
+            guard let self = self else {
+                return
+            }
+            self.dismiss {
+                self.successBlock?(self.currentAmount)
+            }
         }
     }
 

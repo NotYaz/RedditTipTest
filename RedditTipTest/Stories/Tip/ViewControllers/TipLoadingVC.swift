@@ -26,7 +26,7 @@ extension TipLoadingVC {
     private func setupUI() {
         logoIM.isHidden = true
         coinView.alpha = 0.0
-        coinView.transform = CGAffineTransform(translationX: 0.0, y: 100.0).concatenating(CGAffineTransform(scaleX: 0.5, y: 0.5))
+        coinView.transform = CGAffineTransform(translationX: 0.0, y: 50.0).scaledBy(x: 0.5, y: 0.5)
     }
 
     private func rotate(_ showLogo: Bool = true) {

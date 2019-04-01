@@ -21,6 +21,7 @@ internal enum Resources {
   internal enum Assets {
     internal static let commentShape = ImageAsset(name: "CommentShape")
     internal static let fakeFeedBackground = ImageAsset(name: "FakeFeedBackground")
+    internal static let roundTipShape = ImageAsset(name: "RoundTipShape")
     internal static let tipShape = ImageAsset(name: "TipShape")
     internal static let voteDownShape = ImageAsset(name: "VoteDownShape")
     internal static let voteUpShape = ImageAsset(name: "VoteUpShape")
