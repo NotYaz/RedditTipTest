@@ -22,6 +22,8 @@ internal enum StoryboardScene {
   internal enum Tip: StoryboardType {
     internal static let storyboardName = "Tip"
 
+    internal static let tipLoadingVC = SceneType<RedditTipTest.TipLoadingVC>(storyboard: Tip.self, identifier: "TipLoadingVC")
+
     internal static let tipPaymentsTVC = SceneType<RedditTipTest.TipPaymentsTVC>(storyboard: Tip.self, identifier: "TipPaymentsTVC")
 
     internal static let tipSlidingVC = SceneType<RedditTipTest.TipSlidingVC>(storyboard: Tip.self, identifier: "TipSlidingVC")

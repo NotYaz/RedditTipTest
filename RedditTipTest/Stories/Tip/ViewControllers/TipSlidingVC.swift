@@ -17,6 +17,7 @@ final class TipSlidingVC: BaseSlidingVC {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var paymentsHeight: NSLayoutConstraint!
     @IBOutlet weak var tosLabel: TTTAttributedLabel!
+    @IBOutlet weak var loadingContainer: UIView!
 
     let baseHeight: CGFloat = 298.0
     let animationDuration = 0.3
@@ -37,6 +38,7 @@ final class TipSlidingVC: BaseSlidingVC {
         }
     }
     weak var paymentsTVC: TipPaymentsTVC!
+    weak var loadingVC: TipLoadingVC!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +51,8 @@ extension TipSlidingVC {
 
     private func setupUI() {
         currentAmount = 1
-        
+        loadingContainer.isHidden = true
+
         tosLabel.linkAttributes = [NSAttributedString.Key.foregroundColor: Resources.Colors.deepBlue.color,
                                    NSAttributedString.Key.underlineStyle: 0]
         if let tosText = tosLabel.text as? String, let range = tosText.range(of: "Beta Terms of Service") {
@@ -79,7 +82,12 @@ extension TipSlidingVC {
     }
 
     @IBAction func tipButtonClicked(_ sender: Any) {
+        loadingContainer.isHidden = false
+        loadingVC.startAnimation()
 
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.3) { [weak self] in
+            self?.dismiss()
+        }
     }
 
 }
@@ -94,6 +102,8 @@ extension TipSlidingVC {
         case StoryboardSegue.Tip.tipPaymentsTVC.rawValue:
             paymentsTVC = segue.destination as? TipPaymentsTVC
             paymentsTVC.delegate = self
+        case StoryboardSegue.Tip.tipLoadingVC.rawValue:
+            loadingVC = segue.destination as? TipLoadingVC
         default:
             break
         }

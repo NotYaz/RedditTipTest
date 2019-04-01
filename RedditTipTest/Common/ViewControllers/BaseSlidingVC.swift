@@ -31,7 +31,8 @@ class BaseSlidingVC: BaseVC {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.first?.view == dimView {
-            dismiss()
+            // MARK: Uncomment to dismiss on any touch outside the content container
+//            dismiss()
         }
     }
 

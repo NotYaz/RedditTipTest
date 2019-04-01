@@ -48,7 +48,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP CREATOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hP-Ur-J8y">
-                                                        <rect key="frame" x="16" y="14.5" width="64" height="13"/>
+                                                        <rect key="frame" x="16" y="14.5" width="64.5" height="13"/>
                                                         <fontDescription key="fontDescription" name="IBMPlexSans-Bold" family="IBM Plex Sans" pointSize="10"/>
                                                         <color key="textColor" name="darkGray"/>
                                                         <nil key="highlightedColor"/>
@@ -270,18 +270,28 @@
                                             <constraint firstItem="7E4-7c-zXH" firstAttribute="leading" secondItem="eMP-UN-sob" secondAttribute="leading" constant="4" id="rID-qc-JS2"/>
                                         </constraints>
                                     </view>
+                                    <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1B-M8-Sd5">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="346"/>
+                                        <connections>
+                                            <segue destination="qhl-S2-Cc1" kind="embed" identifier="TipLoadingVC" id="Yez-Lc-V3l"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="OoO-l7-rr3" secondAttribute="trailing" id="38X-eH-vTM"/>
+                                    <constraint firstItem="T1B-M8-Sd5" firstAttribute="leading" secondItem="6GN-rz-DNn" secondAttribute="leading" id="6ZY-fC-qgC"/>
                                     <constraint firstItem="ys8-lg-Qp5" firstAttribute="top" secondItem="OoO-l7-rr3" secondAttribute="bottom" id="CnS-cg-A2u"/>
+                                    <constraint firstAttribute="trailing" secondItem="T1B-M8-Sd5" secondAttribute="trailing" id="NHK-Nj-CeD"/>
                                     <constraint firstItem="OoO-l7-rr3" firstAttribute="leading" secondItem="6GN-rz-DNn" secondAttribute="leading" id="P14-IE-WP4"/>
+                                    <constraint firstItem="T1B-M8-Sd5" firstAttribute="top" secondItem="6GN-rz-DNn" secondAttribute="top" id="PPx-cR-Le4"/>
                                     <constraint firstItem="eMP-UN-sob" firstAttribute="top" secondItem="ys8-lg-Qp5" secondAttribute="bottom" id="R8F-ZK-UYL"/>
                                     <constraint firstItem="ys8-lg-Qp5" firstAttribute="leading" secondItem="6GN-rz-DNn" secondAttribute="leading" id="Rxb-Lx-uyq"/>
                                     <constraint firstItem="eMP-UN-sob" firstAttribute="leading" secondItem="6GN-rz-DNn" secondAttribute="leading" id="YT1-qY-ING"/>
                                     <constraint firstAttribute="trailing" secondItem="ys8-lg-Qp5" secondAttribute="trailing" id="dQo-BP-1kS"/>
                                     <constraint firstAttribute="bottom" secondItem="eMP-UN-sob" secondAttribute="bottom" id="q0I-5i-ZFU"/>
                                     <constraint firstItem="OoO-l7-rr3" firstAttribute="top" secondItem="6GN-rz-DNn" secondAttribute="top" id="wZe-mc-7jh"/>
+                                    <constraint firstAttribute="bottom" secondItem="T1B-M8-Sd5" secondAttribute="bottom" id="ybc-xL-1zS"/>
                                     <constraint firstAttribute="trailing" secondItem="eMP-UN-sob" secondAttribute="trailing" id="zBn-da-yZD"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -309,6 +319,7 @@
                         <outlet property="contentContainer" destination="6GN-rz-DNn" id="vBH-0L-4ni"/>
                         <outlet property="contentContainerBottomSpacing" destination="WoG-Yi-5uj" id="BUt-2X-F87"/>
                         <outlet property="dimView" destination="Vgc-Lw-0ti" id="8eN-as-7ov"/>
+                        <outlet property="loadingContainer" destination="T1B-M8-Sd5" id="aiA-l7-4Lh"/>
                         <outlet property="nameLabel" destination="Hcl-TS-ZKQ" id="AUy-ow-jAf"/>
                         <outlet property="panGR" destination="uIH-hn-C5q" id="Ii6-YA-aYf"/>
                         <outlet property="paymentsHeight" destination="n7t-au-YjC" id="xeX-lL-6jj"/>
@@ -394,11 +405,66 @@
             </objects>
             <point key="canvasLocation" x="1608.6956521739132" y="164.73214285714286"/>
         </scene>
+        <!--Tip LoadingVC-->
+        <scene sceneID="bIA-k8-gww">
+            <objects>
+                <viewController storyboardIdentifier="TipLoadingVC" id="qhl-S2-Cc1" customClass="TipLoadingVC" customModule="RedditTipTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tkt-ZJ-lcF">
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="346"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-g3-m5p">
+                                <rect key="frame" x="166.5" y="140.5" width="65" height="65"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SnooLogo" translatesAutoresizingMaskIntoConstraints="NO" id="zuO-jU-7F5">
+                                        <rect key="frame" x="13.5" y="15.5" width="38" height="34"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKK-WI-Tkx">
+                                        <rect key="frame" x="21.5" y="20.5" width="22" height="24"/>
+                                        <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="freshGreen"/>
+                                <constraints>
+                                    <constraint firstItem="zuO-jU-7F5" firstAttribute="centerY" secondItem="WAJ-g3-m5p" secondAttribute="centerY" id="4Kc-og-th0"/>
+                                    <constraint firstItem="oKK-WI-Tkx" firstAttribute="centerY" secondItem="WAJ-g3-m5p" secondAttribute="centerY" id="6JX-BO-YKc"/>
+                                    <constraint firstAttribute="height" constant="65" id="AhR-fJ-AMU"/>
+                                    <constraint firstItem="oKK-WI-Tkx" firstAttribute="centerX" secondItem="WAJ-g3-m5p" secondAttribute="centerX" id="YCw-vW-hNG"/>
+                                    <constraint firstItem="zuO-jU-7F5" firstAttribute="centerX" secondItem="WAJ-g3-m5p" secondAttribute="centerX" id="fCb-Sn-W5K"/>
+                                    <constraint firstAttribute="width" constant="65" id="s8s-BO-GIs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="32.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WAJ-g3-m5p" firstAttribute="centerX" secondItem="Tkt-ZJ-lcF" secondAttribute="centerX" id="0VO-4O-9x8"/>
+                            <constraint firstItem="WAJ-g3-m5p" firstAttribute="centerY" secondItem="Tkt-ZJ-lcF" secondAttribute="centerY" id="xP8-dw-OIh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6X-Gk-mY7"/>
+                    </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="oKK-WI-Tkx" id="Ofa-Lq-Rsj"/>
+                        <outlet property="coinView" destination="WAJ-g3-m5p" id="PLk-Ko-cRS"/>
+                        <outlet property="logoIM" destination="zuO-jU-7F5" id="zz7-UE-cue"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpa-F6-P3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631.8840579710147" y="-133.25892857142856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CheckShape" width="20" height="20"/>
         <image name="CloseShape" width="20" height="20"/>
         <image name="GrayLockShape" width="14" height="16"/>
+        <image name="SnooLogo" width="38" height="34"/>
         <image name="Snoovatar" width="64" height="64"/>
         <namedColor name="darkGray">
             <color red="0.52999997138977051" green="0.54000002145767212" blue="0.55000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

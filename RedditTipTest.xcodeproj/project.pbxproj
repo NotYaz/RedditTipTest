@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C4004862251849F00A7022F /* LongPressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4004852251849F00A7022F /* LongPressButton.swift */; };
+		2C40048822518BF400A7022F /* TipLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40048722518BF400A7022F /* TipLoadingVC.swift */; };
 		2CE3F46622510A640077A490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F46522510A640077A490 /* AppDelegate.swift */; };
 		2CE3F46D22510A670077A490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F46C22510A670077A490 /* Assets.xcassets */; };
 		2CE3F47022510A670077A490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3F46E22510A670077A490 /* LaunchScreen.storyboard */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		0CEF1D4FE4D8FD1FB950E0EC /* Pods-RedditTipTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedditTipTest.debug.xcconfig"; path = "Target Support Files/Pods-RedditTipTest/Pods-RedditTipTest.debug.xcconfig"; sourceTree = "<group>"; };
 		2C4004852251849F00A7022F /* LongPressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButton.swift; sourceTree = "<group>"; };
+		2C40048722518BF400A7022F /* TipLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipLoadingVC.swift; sourceTree = "<group>"; };
 		2CE3F46222510A640077A490 /* RedditTipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedditTipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE3F46522510A640077A490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE3F46C22510A670077A490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				2CE3F4C122512E000077A490 /* TipSlidingVC.swift */,
 				2CE3F4C82251481B0077A490 /* TipPaymentsTVC.swift */,
+				2C40048722518BF400A7022F /* TipLoadingVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				2CE3F4BC2251275B0077A490 /* SlidingTransition.swift in Sources */,
 				2CE3F4D6225168870077A490 /* Card.swift in Sources */,
 				2CE3F4A222510F8B0077A490 /* FeedVC.swift in Sources */,
+				2C40048822518BF400A7022F /* TipLoadingVC.swift in Sources */,
 				2CE3F46622510A640077A490 /* AppDelegate.swift in Sources */,
 				2CE3F4C52251312E0077A490 /* UIView.swift in Sources */,
 				2CE3F4B12251135D0077A490 /* StoryboardSegues.swift in Sources */,

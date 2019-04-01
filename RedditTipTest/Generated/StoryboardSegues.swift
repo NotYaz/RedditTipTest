@@ -16,6 +16,7 @@ internal enum StoryboardSegue {
     case tipSlidingVC = "TipSlidingVC"
   }
   internal enum Tip: String, SegueType {
+    case tipLoadingVC = "TipLoadingVC"
     case tipPaymentsTVC = "TipPaymentsTVC"
   }
 }

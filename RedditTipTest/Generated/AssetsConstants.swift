@@ -29,6 +29,7 @@ internal enum Resources {
     internal static let checkShape = ImageAsset(name: "CheckShape")
     internal static let closeShape = ImageAsset(name: "CloseShape")
     internal static let grayLockShape = ImageAsset(name: "GrayLockShape")
+    internal static let snooLogo = ImageAsset(name: "SnooLogo")
     internal static let snoovatar = ImageAsset(name: "Snoovatar")
   }
   internal enum Colors {
