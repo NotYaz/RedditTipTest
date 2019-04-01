@@ -83,7 +83,7 @@ extension TipSlidingVC {
 
     @IBAction func tipButtonClicked(_ sender: Any) {
         loadingContainer.isHidden = false
-        loadingVC.startAnimation()
+        loadingVC.startAnimation(with: currentAmount)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.3) { [weak self] in
             self?.dismiss()

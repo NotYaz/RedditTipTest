@@ -14,9 +14,6 @@ final class TipLoadingVC: BaseVC {
     @IBOutlet weak var logoIM: UIImageView!
     @IBOutlet weak var amountLabel: UILabel!
 
-    var firstView: UIView!
-    var secondView: UIView!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -48,7 +45,8 @@ extension TipLoadingVC {
 
 extension TipLoadingVC {
 
-    func startAnimation() {
+    func startAnimation(with amount: Int) {
+        amountLabel.text = "$\(amount)"
         UIView.animate(withDuration: 0.2, delay: 0.1, options: .curveEaseIn, animations: {
             self.coinView.alpha = 1.0
             self.coinView.transform = .identity
